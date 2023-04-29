@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    background-color: rgb(20, 146, 230);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .secao {
+    border: 5px solid aqua;
+    border-radius: 50px;
+    padding: 30px;
+    background-color: aquamarine;
+
+  }
+
+  #btn {
+    margin-top: 15px;
+    margin-left: 40%;
+  }
+
+  table,
+  tr,
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="secao">
+      <form action="formulario.php" method="GET">
+        <label for="InNome">Nome:</label>
+        <input type="text" id="InNome" name="nome" required><br>
+        <span>Gênero:</span><br>
+        <label for="inMasculino">Masculino:</label>
+        <input type="radio" name="genero" id="inMasculio" required value="Masculino"><br>
+        <label for="inFeminino">Feminino:</label>
+        <input type="radio" name="genero" id="inFeminino" required value="Feminino"><br>
+        <label for="inNaoInformar">Não informar:</label>
+        <input type="radio" name="genero" id="inNaoInformar" required value="Não informar"><br>
+        <label for="inDataNascimento">Data de nascimento:</label>
+        <input type="date" name="dataNascimento" id="inDataNascimento" required><br>
+        <label for="inTelefone">Telefone:</label>
+        <input type="tel" placeholder="(DD) xxxxx-xxxxx" required id="inTelefone" name="telefone"><br>
+        <label for="inEmail">Email:</label>
+        <input type="text" name="email" id="inEmail"><br>
+        <input type="submit" value="enviar" id="btn">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

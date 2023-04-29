@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Secular One', sans-serif;
+}
+
+.form form label {
+  display: flex;
+}
+
+.container {
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+}
+
+input[type='text'],
+input[type='password'] {
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  border: 3px solid blue;
+}
+
+#myButton {
+  background-color: green;
+  border-radius: 50px;
+  border: 1px solid green;
+
+  cursor: pointer;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 8rem;
+  margin: 1rem auto auto auto;
+}
+#myButton:hover {
+  background-color: blue;
+
+  transition: 0.5s;
+}
