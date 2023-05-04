@@ -2,12 +2,13 @@
 include "conexao.php";
 include "funcoes.php";
 
-if ($usuario=verificaUsuarioLogado()){
+if ($usuario = verificaUsuarioLogado()){
     
 } else {
     header('Location: login.php');   
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

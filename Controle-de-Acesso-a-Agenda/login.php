@@ -1,6 +1,7 @@
 <?php 
-    include "conexao.php";
+  include "conexao.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,8 +36,8 @@
     } else {
       $ds_email = $_POST["ds_email"];
       $ds_senha = md5($_POST["ds_senha"]);
-# echo $ds_senha."<br>";
-# echo $ds_email."<br>";
+      # echo $ds_senha."<br>";
+      # echo $ds_email."<br>";
   
       try {
 
