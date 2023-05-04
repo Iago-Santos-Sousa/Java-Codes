@@ -24,8 +24,11 @@ include_once("header.php");
         </div>
         <div class="form-group">
             <label for="observacao">Observação:</label>
-            <input type="text" class="form-control" id="observacao" name="observacao"
-            value="<?=$onlyContato['observacao']?>" required>
+            
+            <textarea type="text" class="form-control" id="observacao" name="observacao"
+            required>
+                <?=$onlyContato['observacao']?> 
+            </textarea>
         </div>
 
         <br>
